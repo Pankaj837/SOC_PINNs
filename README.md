@@ -4,7 +4,7 @@ This repository documents my week-by-week progress on the SOC-26: Physics-Inform
 
 ## Project Goal
 
-Build a solid practical understanding of Physics-Informed Neural Networks (PINNs) — neural networks trained to satisfy differential equations as part of their loss function — progressing from automatic differentiation fundamentals to solving canonical PDEs and the benchmark Burgers' equation.
+Build a solid practical understanding of Physics-Informed Neural Networks (PINNs), neural networks trained to satisfy differential equations as part of their loss function, progressing from automatic differentiation fundamentals to solving canonical PDEs and the benchmark Burgers' equation.
 
 ## Repo Layout
 
