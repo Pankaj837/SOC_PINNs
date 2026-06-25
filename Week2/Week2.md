@@ -108,6 +108,6 @@ One approach is **Fourier feature embeddings**, instead of feeding raw time `t` 
 
 ## Conclusion & Next Steps
 
-Week 2 demonstrated the full PINN workflow: define the equation, enforce initial conditions via loss, train the network, and evaluate against the exact solution. The frequency sweep gave a concrete, visual demonstration of spectral bias — a real limitation of standard PINNs.
+Week 2 demonstrated the full PINN workflow: define the equation, enforce initial conditions via loss, train the network, and evaluate against the exact solution. The frequency sweep gave a concrete, visual demonstration of spectral bias, a real limitation of standard PINNs.
 
 In **Week 3**, the focus shifts from ODEs to PDEs, using the DeepXDE library to solve the heat and wave equations.
