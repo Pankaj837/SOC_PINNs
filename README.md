@@ -28,8 +28,8 @@ SOC-26-PINNs
 ├── Week6
 │   ├── Week6.md
 │   └── solutions
-└── Week7_8
-    ├── Week7_8.md
+└── Week7&8
+    ├── Week7&8.md
     └── solutions
 ```
 
