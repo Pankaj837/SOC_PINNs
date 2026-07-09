@@ -111,8 +111,8 @@ Based on Grossmann et al. 2023 ("Can PINNs beat FEM?"), answered: when would you
 
 | Method | L2 Error |
 |---|---|
-| Soft BCs | higher |
-| Hard BCs | lower ✅ |
+| Soft BCs | 0.0721 |
+| Hard BCs | 0.0235 |
 
 **Hard BCs performed better** because the network is mathematically forced to satisfy `u(±1,t)=0`, removing one source of loss conflict and simplifying the optimization landscape.
 
@@ -138,11 +138,11 @@ When you have noisy experimental data AND a known PDE, PINNs can fuse both into 
 - Training is slow, sensitive to hyperparameters, and not guaranteed to converge
 - For any smooth forward PDE on a simple domain, FEM is faster and more accurate
 
-**Conclusion:** Use PINNs for inverse problems, parameter identification, high-dimensional PDEs, and data assimilation. Use FEM for forward problems on known geometries.
+## Conclusion & Next Steps
+
+Week 4 established that **the boundary condition enforcement strategy has a measurable effect on accuracy** — hard BCs cut L² error roughly 3x by removing a competing loss term. It also produced the field's standard benchmark result (Burgers' shock capture) as a reference point for everything that follows.
+
+In **Week 5**, the shock-region accuracy problem observed here is addressed directly using Fourier feature embeddings and gradient-norm loss balancing.
 
 ---
 
-## Status
-
-This repository contains the completed work for Weeks 1, 2, 3 and 4 of the SOC-26 project.  
-Submitted as Midterm Report.
