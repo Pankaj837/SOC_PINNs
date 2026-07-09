@@ -70,7 +70,7 @@ Trained the network to approximate `u(x) = sin(x)` and verified:
 - `du/dx ≈ cos(x)`
 - `d²u/dx² ≈ −sin(x)`
 
-Evaluated at 100 random points in [−π, π].
+Evaluated at 100 randomly sampled points in [−π, π].
 
 ### Task 4 — Plot
 Produced a single figure with 3 subplots comparing autograd vs analytical for `u`, `du/dx`, and `d²u/dx²`.
@@ -81,13 +81,14 @@ Produced a single figure with 3 subplots comparing autograd vs analytical for `u
 
 | Derivative | Max Error |
 |---|---|
-| u(x) | ~0.005 |
-| du/dx | ~0.07 |
-| d²u/dx² | ~0.35 |
+| u(x) | ~0.007 |
+| du/dx | ~0.110 |
+| d²u/dx² | ~0.604 |
 
 Errors increase for higher-order derivatives, a known effect of **spectral bias** (networks learn low frequencies first).
 
-The plots showed near-perfect agreement for `u` and `du/dx`, with slight deviation at the edges for `d²u/dx²`.
+The plots showed near-perfect agreement for `u` and `du/dx`, with the largest deviation in `d²u/dx²` — expected, since second derivatives amplify whatever high-frequency error the network hasn't fully learned to suppress.
+
 
 ---
 
